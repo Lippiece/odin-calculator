@@ -1,11 +1,15 @@
 .body {
-	background-color: black;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.95);
 	color: wheat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	gap: 10px;
+}
+.body * {
+	color: wheat;
+	font-family: Rubik, Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 }
 div {
 	border: 1px solid wheat;
