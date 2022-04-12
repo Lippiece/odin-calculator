@@ -10,6 +10,16 @@
 	color: wheat;
 	font-family: Rubik, Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.calculator * {
+	gap: 3px;
+}
+
 }
 div {
 	border: 1px solid wheat;
