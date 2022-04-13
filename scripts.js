@@ -27,11 +27,25 @@ let getInput = () => {
 	operators = operators.map(x => x.replace(/\s/, ""));
 	console.log("Inputs and operators: ",inputs, operators);
 };
-let multiply = (input1, input2) => {
-	return input1 * input2;
-};
-let divide = (input1, input2) => {
-	if (input2 !== 0) {
-		return input1 / input2;
+
+let evaluate = () => {
+	for (let i = 0; i < operators.length; i++) {
+		switch (operators[i]) {
+		case "+":
+			inputs.splice(0, 2, add(inputs[0], inputs[1]));
+			break;
+			
+		case "-":
+			inputs.splice(0, 2, substract(inputs[0], inputs[1]));
+			break;
+			
+		case "*":
+			inputs.splice(0, 2, multiply(inputs[0], inputs[1]));
+			break;
+			
+		case "/":
+			inputs.splice(0, 2, divide(inputs[0], inputs[1]));
+			break;
+		}
 	}
 };
