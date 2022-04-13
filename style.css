@@ -9,6 +9,7 @@
 .body * {
 	color: wheat;
 	font-family: Rubik, Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: large;
 }
 
 .calculator {
