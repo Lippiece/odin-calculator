@@ -56,8 +56,13 @@ button {
 	justify-content: center;
 }
 
+/* Makes the digits even-sized */
 .digits {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+.digits button {
+	flex: 1 0 0;
+	padding: 20px;
 }
