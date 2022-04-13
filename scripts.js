@@ -54,3 +54,23 @@ let evaluate = () => {
 		}
 	}
 };
+
+for (let i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener("click", () => {
+		switch (buttons[i].textContent) {
+		case "+":
+		case "-":
+		case "/":
+		case "*":
+			if (pressed !== buttons[i].textContent) {
+				alert("You pressed the button: " + buttons[i].textContent);
+				input += " " + buttons[i].textContent;
+				pressed = buttons[i].textContent;
+				output.textContent =+ input;
+			} else {
+				break;
+			}
+			break;
+
+	});
+}
