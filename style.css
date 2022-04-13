@@ -23,6 +23,13 @@
 	gap: 4px;
 }
 
+.display {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 200px;
+	gap: 15px;
 }
 div {
 	border: 1px solid wheat;
