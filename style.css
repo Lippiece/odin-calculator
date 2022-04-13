@@ -50,3 +50,8 @@ button {
 	border: 2px solid wheat;
 	color: wheat;
 }
+
+.functions {
+	display: flex;
+	justify-content: center;
+}
