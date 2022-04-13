@@ -66,3 +66,8 @@ button {
 	flex: 1 0 0;
 	padding: 20px;
 }
+
+input {
+	background-color: rgba(0, 0, 0, 0.95);
+	border: 2px solid wheat;
+}
