@@ -55,3 +55,9 @@ button {
 	display: flex;
 	justify-content: center;
 }
+
+.digits {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
