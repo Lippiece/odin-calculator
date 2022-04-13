@@ -1,3 +1,7 @@
+let input1;
+let input2;
+let operator;
+
 let add = (input1, input2) => {
 	return input1 + input2;
 };
