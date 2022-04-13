@@ -1,6 +1,11 @@
+let buttons = document.querySelectorAll("button");
+let outputField = document.querySelector("span");
+
+let input;
 let inputs;
 let operators;
 let output;
+let pressed;
 
 let add = (inputs1, inputs2) => {
 	return parseInt(inputs1) + parseInt(inputs2);
