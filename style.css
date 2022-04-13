@@ -38,3 +38,9 @@
 	justify-content: center;
 	flex-direction: column;
 }
+.buttons button {
+	/* Makes the buttons larger */
+	padding: 10px;
+	/* Makes the buttons take all the width */
+	width: 100%;
+}
