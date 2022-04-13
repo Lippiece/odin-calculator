@@ -1,6 +1,6 @@
-let input1;
-let input2;
-let operator;
+let inputs;
+let operators;
+let output;
 
 let add = (input1, input2) => {
 	return input1 + input2;
