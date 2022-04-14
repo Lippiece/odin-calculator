@@ -1,10 +1,9 @@
 let buttons = document.querySelectorAll("button");
 let outputField = document.querySelector("span");
 
-let input;
-let inputs;
-let operators;
-let output;
+let input = "";
+let operands = [];
+let operators = [];
 let pressed;
 
 let add = (inputs1, inputs2) => {
