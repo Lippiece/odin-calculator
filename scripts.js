@@ -84,7 +84,13 @@ for (let i = 0; i < buttons.length; i++) {
 				break;
 			}
 			break;
-
+			
+		case ".":
+			if (pressed === "digit") {
+				input += buttons[i].textContent;
+				pressed = buttons[i].textContent;
+			}
+			break;
 			
 		case "=":
 			getInput();
