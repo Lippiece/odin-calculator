@@ -57,6 +57,19 @@ let digit = /[0-9]/;
 let operand = /\+|\-|\*|\//; /* regex is a real shit */
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener("click", () => {
+		if (digit.test(buttons[i].textContent)) {
+			if (operand.test(pressed)) {
+				pressed = "digit";
+				input += " " + buttons[i].textContent;
+			} else if (pressed === "eval") {
+				pressed = "digit";
+				input = buttons[i].textContent;
+			} else {				
+				pressed = "digit";
+				input += buttons[i].textContent;
+			}
+		}
+		
 		switch (buttons[i].textContent) {
 		case "+":
 		case "-":
