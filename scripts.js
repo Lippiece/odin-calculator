@@ -110,5 +110,6 @@ for (let i = 0; i < buttons.length; i++) {
 			break;
 
 		}
+		outputField.textContent = input;
 	});
 }
