@@ -23,8 +23,7 @@ function divide(inputs1, inputs2) {
 
 function getInput() {
 	/* Put the inputs and operators in arrays */
-	inputs = input.match(/\d+/g);
-	inputs = inputs.map(x => parseFloat(x));
+	operands = input.match(/\d*\.*\d+/g);
 	operators = input.match(/ \D/g);
 	/* Remove the whitespaces */
 	operators = operators.map(x => x.replace(/\s/, ""));
