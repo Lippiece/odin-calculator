@@ -53,6 +53,8 @@ function evaluate() {
 	}
 }
 
+let digit = /[0-9]/;
+let operand = /\+|\-|\*|\//; /* regex is a real shit */
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener("click", () => {
 		switch (buttons[i].textContent) {
