@@ -21,6 +21,7 @@ function divide(inputs1, inputs2) {
 	}
 }
 
+/* Parse the input for future operations */
 function getInput() {
 	/* Put the inputs and operators in arrays */
 	operands = input.match(/\d*\.*\d+/g);
@@ -31,6 +32,7 @@ function getInput() {
 	console.log("Operands and operators: ", operands, operators);
 }
 
+/* Perform the operations and trim the output array */
 function evaluate() {
 	for (let i = 0; i < operators.length; i++) {
 		switch (operators[i]) {
@@ -53,9 +55,11 @@ function evaluate() {
 	}
 }
 
+/* Add the event listeners to the buttons regardless of their properties */
 let digit = /[0-9]/;
 let operand = /\+|\-|\*|\//; /* regex is a real shit */
 for (let i = 0; i < buttons.length; i++) {
+	/* Digits */
 	buttons[i].addEventListener("click", () => {
 		if (digit.test(buttons[i].textContent)) {
 			if (operand.test(pressed)) {
@@ -70,6 +74,7 @@ for (let i = 0; i < buttons.length; i++) {
 			}
 		}
 		
+		/* Operators */
 		switch (buttons[i].textContent) {
 		case "+":
 		case "-":
