@@ -100,5 +100,13 @@ for (let i = 0; i < buttons.length; i++) {
 				input = operands[0];
 			}
 			break;
+			
+		case "CLEAR":
+			input = "";
+			operands = [];				
+			outputField.textContent = operands;
+			break;
+
+		}
 	});
 }
