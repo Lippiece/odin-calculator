@@ -85,5 +85,14 @@ for (let i = 0; i < buttons.length; i++) {
 			}
 			break;
 
+			
+		case "=":
+			getInput();
+			if (operators.length + 1 === operands.length) {
+				pressed = "eval";
+				evaluate();				
+				input = operands[0];
+			}
+			break;
 	});
 }
