@@ -24,28 +24,30 @@ function divide(inputs1, inputs2) {
 function getInput() {
 	/* Put the inputs and operators in arrays */
 	operands = input.match(/\d*\.*\d+/g);
+	operands = operands.map(x => parseFloat(x));
 	operators = input.match(/ \D/g);
 	/* Remove the whitespaces */
 	operators = operators.map(x => x.replace(/\s/, ""));
+	console.log("Operands and operators: ", operands, operators);
 }
 
 function evaluate() {
 	for (let i = 0; i < operators.length; i++) {
 		switch (operators[i]) {
 		case "+":
-			inputs.splice(0, 2, add(inputs[0], inputs[1]));
+			operands.splice(0, 2, add(operands[0], operands[1]));
 			break;
-			
+
 		case "-":
-			inputs.splice(0, 2, substract(inputs[0], inputs[1]));
+			operands.splice(0, 2, substract(operands[0], operands[1]));
 			break;
-			
+
 		case "*":
-			inputs.splice(0, 2, multiply(inputs[0], inputs[1]));
+			operands.splice(0, 2, multiply(operands[0], operands[1]));
 			break;
-			
+
 		case "/":
-			inputs.splice(0, 2, divide(inputs[0], inputs[1]));
+			operands.splice(0, 2, divide(operands[0], operands[1]));
 			break;
 		}
 	}
