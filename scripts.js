@@ -82,6 +82,7 @@ function evaluate() {
 			operands.splice(0, 2, divide(operands[0], operands[1]));
 			break;
 		}
+		tempTotal = operands[0];
 	}
 }
 
