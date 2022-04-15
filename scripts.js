@@ -112,7 +112,7 @@ for (let i = 0; i < buttons.length; i++) {
 		case "-":
 		case "/":
 		case "*":
-			if (pressed === "digit") {
+			if (pressed === "digit" || pressed === "eval") {
 				pressed = buttons[i].textContent;
 				input += " " + buttons[i].textContent;
 			} else if (pressed === "eval") {
