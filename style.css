@@ -33,8 +33,12 @@ input {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 300px;
-	gap: 15px;
+}
+.slider {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
 }
 .output {
 	color: white;
