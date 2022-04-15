@@ -148,9 +148,10 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 /* Get decimals value from the slider and adjust the evaluation */
-};
 slider.oninput = function updateValue () {
 	decimals = this.value;
 	currentDecimals.textContent = decimals;
 	decimals = parseInt(decimals);
+	if (pressed === "eval") {
+		outputField.textContent = round10(tempTotal, -decimals);}
 };
