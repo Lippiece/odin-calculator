@@ -41,13 +41,13 @@ input {
 	text-align: center;
 }
 
-.buttons {
+.operands {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-.buttons button {
+.operands button {
 	/* Makes the buttons larger */
 	padding: 10px;
 	/* Makes the buttons take all the width */
