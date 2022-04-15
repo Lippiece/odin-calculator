@@ -100,12 +100,12 @@ for (let i = 0; i < buttons.length; i++) {
 			} else if (pressed === "eval") {
 				pressed = "digit";
 				input = buttons[i].textContent;
-			} else {				
+			} else {
 				pressed = "digit";
 				input += buttons[i].textContent;
 			}
 		}
-		
+
 		/* Operators */
 		switch (buttons[i].textContent) {
 		case "+":
@@ -115,34 +115,30 @@ for (let i = 0; i < buttons.length; i++) {
 			if (pressed === "digit" || pressed === "eval") {
 				pressed = buttons[i].textContent;
 				input += " " + buttons[i].textContent;
-			} else if (pressed === "eval") {
-				pressed = buttons[i].textContent;
-				input = "";
-				break;
 			} else {
 				break;
 			}
 			break;
-			
+
 		case ".":
 			if (pressed === "digit") {
 				input += buttons[i].textContent;
 				pressed = buttons[i].textContent;
 			}
 			break;
-			
+
 		case "=":
 			getInput();
 			if (operators.length + 1 === operands.length) {
 				pressed = "eval";
-				evaluate();				
+				evaluate();
 				input = operands[0];
 			}
 			break;
-			
+
 		case "CLEAR":
 			input = "";
-			operands = [];				
+			operands = [];
 			outputField.textContent = operands;
 			break;
 
@@ -150,3 +146,11 @@ for (let i = 0; i < buttons.length; i++) {
 		outputField.textContent = input;
 	});
 }
+
+/* Get decimals value from the slider and adjust the evaluation */
+};
+slider.oninput = function updateValue () {
+	decimals = this.value;
+	currentDecimals.textContent = decimals;
+	decimals = parseInt(decimals);
+};
