@@ -2,6 +2,12 @@ let spans = document.querySelectorAll("span");
 let buttons = document.querySelectorAll("button");
 let inputs = document.querySelectorAll("input");
 
+let slider = inputs[0];
+let currentDecimals = spans[0];
+let outputField = spans[1];
+let decimals = 3;
+let tempTotal;
+
 let input = "";
 let operands = [];
 let operators = [];
