@@ -1,5 +1,6 @@
+let spans = document.querySelectorAll("span");
 let buttons = document.querySelectorAll("button");
-let outputField = document.querySelector("span");
+let inputs = document.querySelectorAll("input");
 
 let input = "";
 let operands = [];
