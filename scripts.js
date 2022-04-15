@@ -83,6 +83,7 @@ function evaluate() {
 			break;
 		}
 		tempTotal = operands[0];
+		operands[0] = round10(operands[0], -decimals);
 	}
 }
 
